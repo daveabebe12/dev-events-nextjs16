@@ -1,3 +1,5 @@
+import Navbar from "@/components/navbar";
+
 import type { Metadata } from "next";
 import { Schibsted_Grotesk, Martian_Mono, Geist } from "next/font/google";
 import "./globals.css";
@@ -40,6 +42,7 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col">
+        <Navbar />
         <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
           <LightRays
             raysOrigin="top-center-offset"
